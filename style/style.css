@@ -40,17 +40,6 @@ p {
   font-size: 1rem;
 }
 
-a {
-  color: #fed136;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-a:hover {
-  color: #e6b301;
-  text-decoration: underline;
-}
-
 h1,
 .h1 {
   font-size: 2.5rem;
@@ -81,11 +70,80 @@ h6,
   font-size: 1rem;
 }
 
-/* Navigation Style */
+.container {
+  max-width: 1140px;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.text-center {
+  text-align: center;
+}
 
+/* Navbar Section Style */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  /* position: relative; */
+  padding: 0.5rem 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  background-color: transparent;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
 
-/* Header Style */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .container div:nth-child(1) {
+  flex-basis: 20%;
+}
+
+.navbar .container div:nth-child(2) {
+  flex-basis: 50%;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  transition: font-size 0.3s ease-in-out;
+  color: #fed136;
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+}
+
+.navbar .container a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625em;
+  padding: 0.5rem 1rem;
+}
+
+/* Header Section Style */
 .showcase {
   padding-top: 17rem;
   padding-bottom: 12.5rem;
@@ -96,11 +154,153 @@ h6,
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  text-align: center;
+  color: #fff;
 }
 
+.showcase .showcase-subheading {
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.showcase .showcase-heading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.showcase button {
+  cursor: pointer;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #fed136;
+  border-color: #fed136;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.showcase button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Services Section Style */
+.services-page {
+  padding: 6rem 0;
+}
+
+.services-page .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.services-page h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.services-page h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 4rem;
+  color: #6c757d;
+  line-height: 1.2;
+}
+
+.services-page .container div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.services-page .text-center div:nth-child(1),
+.services-page .text-center div:nth-child(2),
+.services-page .text-center div:nth-child(3) {
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+  position: relative;
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  display: block;
+}
+
+.services-page .text-primary {
+  color: #fed136;
+}
+
+.services-page h4 {
+  margin-bottom: 1rem;
+  padding: 1rem 0rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.services-page p {
+  color: #6c757d;
+  line-height: 1.75;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Portfolio Section Style */
+.portfolio-page h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.portfolio-page h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 4rem;
+  color: #6c757d;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.portfolio-caption-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.portfolio-caption-subheading {
+  font-style: italic;
+  color: #6c757d;
+}
+
+/* Contact Style */
 section#contact {
   background-color: #212529;
-  background-image: url(/img/map-image.png);
+  background-image: url(https://raw.githubusercontent.com/Pirci/agency-gp/main/img/map-img.png);
   background-repeat: no-repeat;
   background-position: center;
 }
