@@ -83,13 +83,15 @@ h6,
 
 /* Navigation Style */
 
+
+
 /* Header Style */
 .showcase {
   padding-top: 17rem;
   padding-bottom: 12.5rem;
   text-align: center;
   color: #fff;
-  background-image: url(/img/header-bg.jpg);
+  background-image: url(https://raw.githubusercontent.com/Pirci/agency-gp/main/img/header-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
