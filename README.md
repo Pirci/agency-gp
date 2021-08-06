@@ -1,8 +1,6 @@
-### Seytech Fullstack Software Developer Bootcamp
+### Agency Landing Page
 
-> HTML & CSS #2nd Graduation Project (Agency).
-
-From [Fullstack Software Developer Bootcamp](https://www.seytech.co/)
+> HTML & CSS Agency Project.
 
 ## Live Demo
 
